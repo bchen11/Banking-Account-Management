@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="506.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="deposit.DepositAmountController">
+   <children>
+      <Pane layoutX="187.0" prefHeight="506.0" prefWidth="400.0">
+         <children>
+            <Label layoutX="65.0" layoutY="33.0" text="Deposit Amount">
+               <font>
+                  <Font name="Impact" size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="112.0" text="Your Account No:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="157.0" text="Current Balance:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="account_no" layoutX="212.0" layoutY="105.0" text="000000">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="balance" layoutX="239.0" layoutY="147.0" text="1111">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="212.0" layoutY="147.0" text="\$">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="amt_field" focusColor="#007ff5" layoutX="57.0" layoutY="253.0" maxWidth="303.0" minWidth="303.0" prefHeight="32.0" prefWidth="300.0" promptText="Amount" unFocusColor="#007ff5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="pin_field" focusColor="#007ff5" layoutX="59.0" layoutY="310.0" prefHeight="25.0" prefWidth="303.0" promptText="Enter Account PIN" unFocusColor="#007ff5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <Button layoutX="98.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#depositButton" prefHeight="40.0" prefWidth="200.0" styleClass="login-button" stylesheets="@../design/design.css" text=" Deposit">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="PLUS" size="20" styleClass="login-icon" />
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
